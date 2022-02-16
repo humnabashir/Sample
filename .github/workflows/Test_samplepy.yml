@@ -26,5 +26,5 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
     - name: Print Secret
-      run: print(secrets.HUMNA_SAMPLE)
+      run: print ${{secrets.HUMNA_SAMPLE}}
 
